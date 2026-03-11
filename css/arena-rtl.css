@@ -1,0 +1,53 @@
+/* RTL overrides for Arabic */
+html[dir="rtl"] body{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Tahoma, Arial, "Noto Sans Arabic", "Noto Sans", sans-serif;
+}
+html[dir="rtl"] .nav{ direction: rtl; }
+html[dir="rtl"] .brand{ flex-direction: row-reverse; }
+html[dir="rtl"] .nav-links{ direction: rtl; }
+html[dir="rtl"] .nav-links a::after{ transform-origin: right; }
+html[dir="rtl"] .hero-grid{ direction: rtl; }
+html[dir="rtl"] .kpi{ text-align: right; }
+html[dir="rtl"] .table th{ text-align: right; }
+html[dir="rtl"] .row{ direction: rtl; }
+html[dir="rtl"] .tiers{ direction: rtl; }
+html[dir="rtl"] .tier ul{ padding-right: 18px; padding-left: 0; }
+html[dir="rtl"] .summary, html[dir="rtl"] .results{ direction: rtl; }
+html[dir="rtl"] .line, html[dir="rtl"] .result{ flex-direction: row-reverse; }
+html[dir="rtl"] .footer-grid{ direction: rtl; }
+
+/* ============================================================
+   QC PATCH v1.1 — RTL tweaks for new elements
+   ============================================================ */
+html[dir="rtl"] .nav-links a::after{ transform-origin:right; }
+html[dir="rtl"] .ac-modal-title{ flex-direction: row-reverse; }
+html[dir="rtl"] .ac-modal-toggle{ justify-content:flex-start; }
+html[dir="rtl"] .hero-dots{ flex-direction: row-reverse; }
+html[dir="rtl"] .emoji-img{ margin-inline-end:0; margin-inline-start:12px; }
+html[dir="rtl"] .emoji-img.sm{ margin-inline-end:0; margin-inline-start:10px; }
+
+
+/* QC Patch – Issue 6 fixed */
+html[dir="rtl"] body,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] p,
+html[dir="rtl"] a,
+html[dir="rtl"] span,
+html[dir="rtl"] small,
+html[dir="rtl"] strong,
+html[dir="rtl"] li,
+html[dir="rtl"] label,
+html[dir="rtl"] button,
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea,
+html[dir="rtl"] th,
+html[dir="rtl"] td{
+  font-family:"DIN Next Arabic","DIN Next LT Arabic",Cairo,"Noto Sans Arabic",Tahoma,Arial,sans-serif !important;
+}
+

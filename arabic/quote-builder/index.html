@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="منشئ عرض سعري لترخيص ArenaCore: فئات، إضافات، تسعير، وتصدير.">
+  <meta name="theme-color" content="#070A10">
+  <title>ArenaCore — منشئ العرض السعري</title>
+
+  <meta property="og:title" content="ArenaCore — منشئ العرض السعري">
+  <meta property="og:description" content="منشئ عرض سعري لترخيص ArenaCore: فئات، إضافات، تسعير، وتصدير.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/img/arenacore-editor-shot.png">
+
+  <link rel="preload" as="image" href="../assets/img/arenacore-logo.png">
+  <link rel="stylesheet" href="../css/arena.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/arena-rtl.css">
+  
+</head>
+<body>
+
+
+<a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../">
+        <img src="../assets/img/arenacore-logo.png" alt="ArenaCore logo" />
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="../index.html#features">المزايا</a>
+<a href="../index.html#roi">حاسبة العائد</a>
+<a href="../index.html#demos">العروض</a>
+<a href="../index.html#specs">المواصفات</a>
+<a href="../quote-builder/">منشئ العرض السعري</a>
+<a href="../index.html#contact">تواصل معنا</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="lang-pill" href="../../index.html" aria-label="Switch language">English</a>
+        <button id="themeToggle" class="theme-switch" type="button" aria-pressed="false">
+          <span class="knob" aria-hidden="true"></span>
+        </button>
+        <a class="btn primary no-print" href="../quote-builder/">أنشئ عرضك السعري</a>
+        <button id="burger" class="burger" type="button" aria-label="Open menu" aria-expanded="false"><span class="burger-lines" aria-hidden="true"><span></span></span></button>
+      </div>
+    </nav>
+
+    <div id="mobilePanel" class="mobile-panel" aria-label="Mobile menu">
+      <a href="../index.html#features">المزايا</a>
+<a href="../index.html#roi">حاسبة العائد</a>
+<a href="../index.html#demos">العروض</a>
+<a href="../index.html#specs">المواصفات</a>
+<a href="../quote-builder/">منشئ العرض السعري</a>
+<a href="../index.html#contact">تواصل معنا</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <h1 style="margin:0 0 10px;">منشئ العرض السعري</h1>
+      <p class="lead" style="margin:0 0 18px;">
+        مُكوّن تسعير احترافي بأسلوب منتجات الألعاب الراقية — مقارنة الفئات، الإضافات، ومتطلبات FPS. تصدير PDF أو إرسال بريد.
+      </p>
+
+      
+
+      <!-- QC PATCH v1.1: تبديل المنتج (ArenaCore vs VERSUS) -->
+      <div class="pills no-print" style="margin:0 0 14px;" aria-label="تبديل المنتج">
+        <label class="pill"><input type="radio" name="product" value="ArenaCore" checked> محرك ArenaCore FPS</label>
+        <label class="pill"><input type="radio" name="product" value="VERSUS"> ترخيص VERSUS Battle Royale</label>
+      </div>
+      <div class="small" style="margin:-6px 0 18px;">اختر المنتج أولاً — سيتم تهيئة الخيارات تلقائيًا بحسب الاختيار.</div>
+<div id="quoteBuilder" class="qb">
+        <div>
+          <div class="stepper no-print" aria-label="الخطوات">
+            <div class="step active"><span class="n">1</span> الفئة</div>
+            <div class="step"><span class="n">2</span> متطلبات FPS</div>
+            <div class="step"><span class="n">3</span> الإضافات</div>
+            <div class="step"><span class="n">4</span> بيانات العميل</div>
+          </div>
+
+          <div class="card step-panel">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">1) اختر فئة الترخيص</h2>
+            <div class="tiers" role="list">
+              <div class="tier" role="listitem" data-tier="studio">
+                <h3>Studio</h3>
+                <div class="price">$35,000 <span class="small">/ سنويًا</span></div>
+                <ul>
+                  <li>ترخيص PC بشكل أساسي</li>
+                  <li>أدوات FPS الأساسية</li>
+                  <li>دعم قياسي</li>
+                </ul>
+              </div>
+              <div class="tier" role="listitem" data-tier="pro">
+                <h3>Pro</h3>
+                <div class="price">$75,000 <span class="small">/ سنويًا</span></div>
+                <ul>
+                  <li>أنظمة تنافسية متقدمة</li>
+                  <li>أدوات شبكات موسعة</li>
+                  <li>استجابة دعم أسرع</li>
+                </ul>
+              </div>
+              <div class="tier" role="listitem" data-tier="enterprise">
+                <h3>Enterprise</h3>
+                <div class="price">$155,000 <span class="small">/ سنويًا</span></div>
+                <ul>
+                  <li>تخصيص محرك حسب الحاجة</li>
+                  <li>SLA + إضافات أمنية</li>
+                  <li>Onboarding مؤسسي</li>
+                </ul>
+              </div>
+            </div>
+            <div class="small">الأسعار مرجعية. العرض الرسمي يعتمد على النطاق، CCU، المنصات، والإضافات.</div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">2) متطلبات FPS</h2>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCCU">CCU مستهدف</label>
+                <input id="qbCCU" class="input" type="number" min="0" value="5000">
+                <div class="help">عدد اللاعبين المتزامنين في الذروة.</div>
+              </div>
+              <div class="field">
+                <label for="qbRegions">المناطق</label>
+                <select id="qbRegions" class="input">
+                  <option value="MENA">MENA</option>
+                  <option value="EU">EU</option>
+                  <option value="NA">NA</option>
+                  <option value="Global">Global</option>
+                </select>
+                <div class="help">تؤثر على افتراضات النشر.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCurrency">العملة</label>
+                <select id="qbCurrency" class="input">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JOD">JOD</option>
+                  <option value="SAR">SAR</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qbPackage">الباقة</label>
+                <select id="qbPackage" class="input">
+                  <option value="starter">أساسية</option>
+                  <option value="growth">نمو</option>
+                  <option value="scale">توسع</option>
+                  <option value="enterprise">مؤسسية</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbTimeline">الجدول الزمني (شهور)</label>
+                <input id="qbTimeline" class="input" type="number" min="1" value="6">
+              </div>
+              <div class="field">
+                <label for="qbFPS">FPS مستهدف</label>
+                <input id="qbFPS" class="input" type="number" min="30" value="120">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbTick">Tick Rate (Hz)</label>
+                <input id="qbTick" class="input" type="number" min="20" value="60">
+              </div>
+              <div class="field">
+                <label for="qbAuthority">نموذج التحكم الشبكي</label>
+                <select id="qbAuthority" class="input">
+                  <option value="Authoritative">Authoritative</option>
+                  <option value="Hybrid">Hybrid</option>
+                  <option value="Client">Client-Heavy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbHosting">خطة الاستضافة</label>
+                <select id="qbHosting" class="input">
+                  <option value="self">إدارة ذاتية</option>
+                  <option value="managed">سحابة مُدارة</option>
+                  <option value="dedicated">بنية إقليمية مخصصة</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qbComponents">المكونات الأساسية</label>
+                <select id="qbComponents" class="input">
+                  <option value="engine">المحرك + الأدوات</option>
+                  <option value="engine_backend">المحرك + الخلفية</option>
+                  <option value="fullstack">حزمة متكاملة</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="card" style="padding:14px;">
+              <h3 style="margin:0 0 8px;font-size:16px;">المنصات</h3>
+              <div class="pills">
+                <label class="pill"><input class="chk-platform" type="checkbox" value="PC" checked> PC</label>
+                <label class="pill"><input class="chk-platform" type="checkbox" value="Console"> Console</label>
+                <label class="pill"><input class="chk-platform" type="checkbox" value="Mobile"> Mobile</label>
+              </div>
+            </div>
+
+            <div class="small" style="margin-top:10px;">نصيحة: أضف Console/Mobile فقط إن كان ضروريًا — يؤثر على نطاق الدعم والتكلفة.</div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">3) الإضافات</h2>
+            <p class="section-sub" style="margin:0 0 14px;">اختر ما يزيد احتمالية الإطلاق أسرع وتشغيل المنتج بأمان.</p>
+
+            <div class="grid-3" style="grid-template-columns:1fr 1fr;">
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Matchmaking مخصص</h3>
+                    <p style="margin:0;">منطق صفوف، Skill bins، وتدفقات مباراة تنافسية.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Dedicated Matchmaking">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Anti-Cheat Toolkit</h3>
+                    <p style="margin:0;">Hardening hooks، فحوصات خادم، وTelemetry flags.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Anti-Cheat Toolkit">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">LiveOps Analytics</h3>
+                    <p style="margin:0;">لوحات، KPIs، أحداث، ومؤشرات الاستقرار.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="LiveOps Analytics">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Custom Rendering</h3>
+                    <p style="margin:0;">تحسينات وتخصيص حسب نمط الفن المستهدف.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Custom Rendering Pipeline">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">بوابة إدارة White-Label</h3>
+                    <p style="margin:0;">أدوات إدارة/بطولات تحمل علامتك.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="White-Label Admin Portal">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Priority SLA</h3>
+                    <p style="margin:0;">استجابة أولوية + مسار تصعيد.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Priority Support SLA">
+                </div>
+              </label>
+
+              <!-- QC PATCH v1.1: إضافات خاصة بـ VERSUS (تظهر فقط عند اختيار VERSUS) -->
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">نموذج العوائد وحقوق النشر</h3>
+                    <p style="margin:0;">هيكلة الترخيص، شروط النشر، الحقوق الإقليمية، وخيارات العوائد.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="نموذج العوائد وحقوق النشر">
+                </div>
+              </label>
+
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">طبقة Web3 / NFT</h3>
+                    <p style="margin:0;">طبقة اختيارية لـ NFTs (مظهر/مقتنيات) مع Hooks لسوق إلكتروني.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="طبقة Web3 / NFT">
+                </div>
+              </label>
+
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">حزمة محتوى Battle Royale</h3>
+                    <p style="margin:0;">حزمة محتوى مخصصة لـ BR + قوالب إيقاع الفعاليات (متوافقة مع الـ Case Study).</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="حزمة محتوى Battle Royale">
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">4) بيانات العميل</h2>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbName">الاسم الكامل</label>
+                <input id="qbName" class="input" placeholder="اسمك">
+              </div>
+              <div class="field">
+                <label for="qbEmailIn">البريد المهني *</label>
+                <input id="qbEmailIn" class="input" placeholder="name@company.com">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCompany">الشركة / الاستوديو</label>
+                <input id="qbCompany" class="input" placeholder="اسم الاستوديو">
+              </div>
+              <div class="field">
+                <label>رابط المشاركة</label>
+                <input id="qbShareLink" class="input" readonly value="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="qbNotes">ملاحظات</label>
+              <textarea id="qbNotes" class="input" placeholder="قيود الشبكات، المنصات، متطلبات الأمان، مخاطر الجدول الزمني…"></textarea>
+            </div>
+
+            <div class="pills no-print">
+              <button id="qbCopyLink" class="btn" type="button">نسخ رابط المشاركة</button>
+              <a id="qbEmail" class="btn primary" href="#">إرسال العرض عبر البريد</a>
+              <button id="qbPDF" class="btn" type="button">تصدير PDF</button>
+            </div>
+
+            <div class="small" style="margin-top:10px;">تصدير PDF عبر المتصفح: طباعة → حفظ كملف PDF.</div>
+          </div>
+
+          <div class="pills no-print" style="margin-top: 12px;">
+            <button id="qbPrev" class="btn" type="button" disabled>السابق</button>
+            <button id="qbNext" class="btn primary" type="button">التالي</button>
+            <button id="qbSubmit" class="btn primary" type="button" style="display:none;">إنهاء</button>
+            <a class="btn" href="../index.html#roi">حاسبة العائد</a>
+          </div>
+        </div>
+
+        <aside class="summary" aria-label="ملخص العرض">
+          <h3>ملخص مباشر</h3>
+          <p class="muted" style="margin:0 0 10px;">التسعير يتغير لحظيًا حسب الفئة + الحجم + الإضافات.</p>
+
+          <div class="line"><span>الفئة</span><strong id="sumTier">Studio</strong></div>
+          <div class="line"><span>المنصات</span><strong id="sumPlatforms">PC</strong></div>
+          <div class="line"><span>CCU</span><strong id="sumCCU">5,000</strong></div>
+          <div class="line"><span>المدة</span><strong id="sumTimeline">6 شهر</strong></div>
+          <div class="line"><span>FPS</span><strong id="sumFPS">120 FPS</strong></div>
+          <div class="line"><span>Tick</span><strong id="sumTick">60 هرتز</strong></div>
+          <div class="line"><span>Authority</span><strong id="sumAuthority">Authoritative</strong></div>
+          <div class="line"><span>العملة</span><strong id="sumCurrency">USD</strong></div>
+          <div class="line"><span>الباقة</span><strong id="sumPackage">Starter</strong></div>
+          <div class="line"><span>الاستضافة</span><strong id="sumHosting">Self-managed</strong></div>
+          <div class="line"><span>المكونات</span><strong id="sumComponents">Engine + Tools</strong></div>
+          <div class="line"><span>الوحدات</span><strong id="sumModules">—</strong></div>
+
+          <div style="height:10px;"></div>
+
+          <div class="line"><span>الأساس</span><strong id="sumBase">$35,000</strong></div>
+          <div class="line"><span>الحجم</span><strong id="sumScale">$0</strong></div>
+          <div class="line"><span>الإضافات</span><strong id="sumAddons">$0</strong></div>
+          <div class="line"><span>الإجمالي</span><strong id="sumTotal" class="total">$35,000</strong></div>
+
+          <div class="small" style="margin-top:10px;">
+            للحصول على عرض رسمي جاهز للمشتريات، استخدم زر البريد — وسيتم تأكيد النطاق والمنصات وSLA.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid footer-rich">
+      <div>
+        <div class="footer-brand"><img src="../assets/img/arenacore-logo.png" alt="ArenaCore logo"><span>ArenaCore</span></div>
+        <p style="margin:0 0 10px;">ترخيص محرك FPS احترافي مع دعم تجاري، حاسبات عائد، بناء عروض سعرية، وأدوات جاهزة للاستوديوهات والناشرين.</p>
+        <p class="small" style="margin:0;">جميع الأسعار والنتائج تقديرية، ويتم اعتماد العرض النهائي بعد المراجعة الفنية.</p>
+      </div>
+      <div>
+        <h4>المنصة</h4>
+        <div class="footer-links"><a href="../index.html#features">المزايا</a><a href="../index.html#roi">حاسبة العائد</a><a href="../quote-builder/">منشئ العرض السعري</a><a href="../index.html#contact">تواصل معنا</a></div>
+      </div>
+      <div>
+        <h4>قانوني</h4>
+        <div class="footer-links"><a href="../terms.html">الشروط</a><a href="../privacy.html">الخصوصية</a><a href="../404.html">صفحة 404</a></div>
+      </div>
+      <div>
+        <h4>تجاري</h4>
+        <div class="footer-links"><a href="mailto:sales@arenacore.com">sales@arenacore.com</a><a href="../index.html#specs">بوابة القرار</a><a href="../index.html#demos">معرض الأنماط</a></div>
+        <div class="small" style="margin-top:10px;">© 2026 ArenaCore. جميع الحقوق محفوظة.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="../js/app.js" defer></script>
+</body>
+</html>

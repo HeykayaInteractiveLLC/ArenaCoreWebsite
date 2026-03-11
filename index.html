@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A premium FPS-first proprietary game engine and tooling stack for competitive online arena studios. License ArenaCore, build faster, and ship esports-grade performance.">
+  <meta name="theme-color" content="#070A10">
+  <title>ArenaCore — Proprietary FPS Game Engine Licensing</title>
+
+  <meta property="og:title" content="ArenaCore — Proprietary FPS Game Engine Licensing">
+  <meta property="og:description" content="A premium FPS-first proprietary game engine and tooling stack for competitive online arena studios. License ArenaCore, build faster, and ship esports-grade performance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/arenacore-editor-shot.png">
+
+  
+  <!-- QC PATCH v16 favicon block -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="favicons/favicon-128x128.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicons/favicon.ico">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <meta name="msapplication-TileImage" content="favicons/mstile-150x150.png">
+  <meta property="og:site_name" content="ArenaCore">
+  <meta property="og:image" content="favicons/android-chrome-512x512.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="ArenaCore favicon">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ArenaCore — Proprietary FPS Game Engine Licensing">
+  <meta name="twitter:description" content="A premium FPS-first proprietary game engine and tooling stack for competitive online arena studios. License ArenaCore, build faster, and ship esports-grade performance.">
+  <meta name="twitter:image" content="favicons/android-chrome-512x512.png">
+  <meta name="twitter:image:alt" content="ArenaCore favicon">
+<link rel="preload" as="image" href="assets/img/arenacore-logo.png">
+  <link rel="stylesheet" href="css/arena.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="./">
+        <img src="assets/img/arenacore-logo.png" alt="ArenaCore logo" />
+      </a>
+
+      <div class="nav-links" role="navigation">
+        <a href="#features">Features</a>
+        <a href="#roi">ROI Calculator</a>
+        <a href="#demos">Demos</a>
+        <a href="#stats">Stats</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="lang-pill" href="arabic/index.html" aria-label="Switch language">العربية</a>
+
+        <button id="themeToggle" class="theme-switch" type="button" aria-pressed="false">
+          <span class="knob" aria-hidden="true"></span>
+        </button>
+
+        <!-- QC PATCH v1.1: Build Your Quote opens huge modal (fallback to page) -->
+        <a class="btn primary no-print" href="quote-builder/" data-quote-open="1"><img class="ac-emoji sm" src="assets/img/quote.png" alt="" aria-hidden="true"> Build Your Quote</a>
+
+        <button id="burger" class="burger" type="button" aria-label="Open menu" aria-expanded="false"><span class="burger-lines" aria-hidden="true"><span></span></span></button>
+      </div>
+    </nav>
+
+    <div id="mobilePanel" class="mobile-panel" aria-label="Mobile menu">
+      <a href="#features">Features</a>
+      <a href="#roi">ROI Calculator</a>
+      <a href="#demos">Demos</a>
+      <a href="#stats">Stats</a>
+      <a href="#specs">Specs</a>
+      <a href="#contact">Contact</a>
+      <a href="quote-builder/">Quote Builder</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <!-- QC PATCH v1.1: Hero slider background (official artwork) -->
+        <div class="hero-slider" aria-hidden="true">
+      <div class="hero-slide is-active hero-slide-video"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/concept-01.jpg"><source src="assets/videos/ArenaCore-Video-01-.mp4" type="video/mp4"></video></div>
+      <div class="hero-slide hero-slide-video"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/concept-02.jpg"><source src="assets/videos/ArenaCore-Video-02.mp4" type="video/mp4"></video></div>
+      <div class="hero-slide hero-slide-video"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/concept-03.jpg"><source src="assets/videos/ArenaCore-Video-03.mp4" type="video/mp4"></video></div>
+      <div class="hero-slide hero-slide-video"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/concept-04.jpg"><source src="assets/videos/ArenaCore-Video-04.mp4" type="video/mp4"></video></div>
+      <div class="hero-slide hero-slide-video"><video class="hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/concept-01.jpg"><source src="assets/videos/ArenaCore-Video-05.mp4" type="video/mp4"></video></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-dots" aria-hidden="true">
+        <span class="hero-dot is-active"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+        <span class="hero-dot"></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="hero-copy-main">
+            <div class="badge"><span class="dot"></span> Proprietary Engine Licensing • FPS / Arena / Esports</div>
+            <!-- QC Patch – Issue 1 fixed (bilingual) -->
+            <h1 id="heroTitle">Turn your next FPS into a truly competitive arena powerhouse — <span style="background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;">licensed & battle-ready</span>.</h1>
+            <p id="heroLead" class="lead hero-lead">
+              ArenaCore is a proprietary engine + cloud tooling stack built to help studios ship faster, scale smoother, and monetize reliably —
+              with FPS-optimized pipelines, competitive systems, and production-grade multiplayer foundations.
+            </p>
+            <div class="hero-actions">
+              <a id="heroPrimaryCta" class="btn primary" href="quote-builder/" data-quote-open="1">Build a Quote</a>
+              <a class="btn" href="#roi">Estimate ROI</a>
+              <a class="btn ghost" href="#demos">Watch Demos</a>
+            </div>
+          </div>
+          <!-- QC Patch – Issue 3 fixed (bilingual) -->
+        </div>
+
+        <div class="hero-card">
+          <!-- QC PATCH v1.3: remove hero-meta completely, keep hero layout intact -->
+          <div class="hero-media" aria-label="ArenaCore visuals">
+            <img src="assets/img/hero-operator.png" alt="ArenaCore operator artwork">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_08_Game_Engine.png" alt="" aria-hidden="true"> Built for FPS studios that need performance, control, and speed</h2>
+      <p class="section-sub">Everything is designed to convert into licensing: faster delivery, higher stability, and measurable ROI.</p>
+
+      <!-- QC PATCH v1.1: exactly 9 advantage cards (expanded from existing bullets, same intent/order) -->
+      <div class="grid-3">
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_13_Victory.png" alt="" aria-hidden="true"> Competitive Systems</h3><p>Ranks, leaderboards, tournament logic, match flow patterns, and esports-friendly loops — ready to customize.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_17_Customization.png" alt="" aria-hidden="true"> Developer Control</h3><p>Level editor workflows, weapon configuration tools, and data-driven balancing — built for iteration speed.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_16_Multiplayer.png" alt="" aria-hidden="true"> Production Multiplayer</h3><p>Lobby/room patterns, real-time testing flows, and scalable foundations aligned with FPS networking realities.</p></div>
+
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_09_Performance.png" alt="" aria-hidden="true"> Tick-rate Ready Patterns</h3><p>Structured scaffolding for tick-rate, replication, and competitive match pacing — tuned for arena FPS expectations.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_29_Precision_Target.png" alt="" aria-hidden="true"> AI & Combat Graphs</h3><p>AI behavior graph patterns and extensible combat logic — optimized for fast iteration and predictable gameplay.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_22_Integration.png" alt="" aria-hidden="true"> Tooling & Pipelines</h3><p>Editor → build → play loops designed for production teams: reduce friction, cut iteration cycles, ship faster.</p></div>
+
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_19_Security.png" alt="" aria-hidden="true"> Security Options</h3><p>Anti-cheat toolkit hooks, server authority patterns, and operations-friendly safety guardrails.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_24_Advanced_Analytics.png" alt="" aria-hidden="true"> Telemetry Hooks</h3><p>Telemetry-friendly design that supports live-ops monitoring, KPI tracking, and performance auditing.</p></div>
+        <div class="card"><h3><img class="ac-emoji sm" src="assets/emoji/Emoji_28_Growth_Metrics.png" alt="" aria-hidden="true"> Faster Time-to-Market</h3><p>License-ready foundations reduce reinvention and help studios hit launch windows under competitive pressure.</p></div>
+      </div>
+
+      <div class="section tight">
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Why license a proprietary engine?</h3>
+          <p style="margin:0;">Control your roadmap, reduce dependency risk, and differentiate your FPS product with custom systems — while keeping time-to-market aggressive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="roi">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_02_ROI_Growth.png" alt="" aria-hidden="true"> Interactive ROI Calculator (switchable: ArenaCore ↔ VERSUS)</h2>
+      <p class="section-sub">Existing calculator kept 100%. Added product toggle + charts + flow diagram (no new risk).</p>
+
+      <!-- QC PATCH v1.1: Product tabs (AceQuest-style pills) -->
+      <div class="pills no-print" aria-label="ROI product toggle">
+        <button class="pill" type="button" data-roi-product="ArenaCore" aria-pressed="true">ArenaCore FPS Engine</button>
+        <button class="pill" type="button" data-roi-product="VERSUS" aria-pressed="false">VERSUS Battle Royale License</button>
+      </div>
+
+      <div class="roi">
+        <div class="card">
+          <!-- Existing calculator form (UNCHANGED IDs) -->
+          <form id="roiForm" class="form" novalidate>
+            <div class="pills no-print" aria-label="Presets">
+              <button class="pill" type="button" data-preset="indie">Indie FPS (10 devs)</button>
+              <button class="pill" type="button" data-preset="aa">AA Arena (28 devs)</button>
+              <button class="pill" type="button" data-preset="aaa">AAA Competitive (65 devs)</button>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="roiTeam">Team size</label>
+                <input id="roiTeam" class="input" type="number" min="1" value="28">
+                <div class="help">Total active devs/tech artists/engineers.</div>
+              </div>
+              <div class="field">
+                <label for="roiCost">Avg. monthly cost per dev (USD)</label>
+                <input id="roiCost" class="input" type="number" min="0" value="8500">
+                <div class="help">Salary + overhead.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="roiMonths">Timeline (months)</label>
+                <input id="roiMonths" class="input" type="number" min="1" value="14">
+                <div class="help">Planned delivery window.</div>
+              </div>
+              <div class="field">
+                <label for="roiTimeSaved">Time saved with ArenaCore (months)</label>
+                <input id="roiTimeSaved" class="input" type="number" min="0" value="3">
+                <div class="help">Conservative estimate.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="roiRevenue">Projected monthly revenue after launch (USD)</label>
+                <input id="roiRevenue" class="input" type="number" min="0" value="180000">
+                <div class="help">Used only to model time-to-market benefit.</div>
+              </div>
+              <div class="field">
+                <label for="roiInfra">Infra savings / month (USD)</label>
+                <input id="roiInfra" class="input" type="number" min="0" value="4200">
+                <div class="help">Build pipelines, hosting, tools, ops.</div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="roiLicense">License estimate (USD)</label>
+              <input id="roiLicense" class="input" type="number" min="0" value="75000">
+              <div class="help">Tip: match the tier range (≈ $35k–$155k yearly, per internal deck).</div>
+            </div>
+
+            <div class="pills no-print">
+              <button id="roiCopy" class="btn" type="button">Copy Summary</button>
+              <button id="roiPrint" class="btn" type="button">Export PDF</button>
+              <a class="btn primary" href="quote-builder/" data-quote-open="1">Build a Quote</a>
+            </div>
+          </form>
+
+          <!-- QC PATCH v1.1: live charts + flow diagram (no new section) -->
+          <div class="charts" aria-label="ROI charts">
+            <div class="card chart-card">
+              <div class="chart-title"><b>Revenue Projection</b><span class="small">Battle Royale CAGR = 10.54% (VERSUS mode)</span></div>
+              <canvas id="roiChartLine" class="chart" aria-label="ROI revenue line chart"></canvas>
+            </div>
+            <div class="card chart-card">
+              <div class="chart-title"><b>Breakdown</b><span class="small">Savings vs license</span></div>
+              <canvas id="roiChartBar" class="chart" aria-label="ROI bar chart"></canvas>
+            </div>
+          </div>
+
+          <div class="card" style="padding:14px;margin-top:12px;">
+            <div class="chart-title"><b>Flow</b><span class="small">Dev time → launch → revenue</span></div>
+            <svg viewBox="0 0 900 140" width="100%" height="140" role="img" aria-label="ROI flowchart" class="roi-flow">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="var(--accent)"/>
+                  <stop offset="1" stop-color="var(--accent2)"/>
+                </linearGradient>
+              </defs>
+              <g fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round">
+                <path d="M110,70 C190,20 260,20 340,70"/>
+                <path d="M340,70 C420,120 500,120 580,70"/>
+                <path d="M580,70 C660,20 740,20 820,70"/>
+              </g>
+              <g font-size="12" fill="var(--text)" text-anchor="middle">
+                <circle cx="110" cy="70" r="22" fill="color-mix(in oklab, var(--surface) 80%, transparent)" stroke="var(--border)"/>
+                <text x="110" y="75">Build</text>
+                <circle cx="340" cy="70" r="22" fill="color-mix(in oklab, var(--surface) 80%, transparent)" stroke="var(--border)"/>
+                <text x="340" y="75">Launch</text>
+                <circle cx="580" cy="70" r="22" fill="color-mix(in oklab, var(--surface) 80%, transparent)" stroke="var(--border)"/>
+                <text x="580" y="75">Scale</text>
+                <circle cx="820" cy="70" r="22" fill="color-mix(in oklab, var(--surface) 80%, transparent)" stroke="var(--border)"/>
+                <text x="820" y="75">Profit</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <aside class="results" aria-label="ROI Results">
+          <div class="result"><b>Estimated savings</b><strong id="roiSavings" class="good">$0</strong></div>
+          <div class="result"><b>Estimated ROI</b><strong id="roiROI" class="good">0%</strong></div>
+          <div class="result"><b>Payback period</b><strong id="roiPayback">—</strong></div>
+          <div class="result"><b>Summary</b><strong id="roiSummary" style="font-size:13px; font-weight:600; color:var(--muted); text-align:right;">—</strong></div>
+          <div class="small" style="margin-top:10px;">This calculator is intentionally transparent. Adjust inputs to match your studio economics and licensing discussions.</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="demos">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_06_Demos.png" alt="" aria-hidden="true"> Demo Videos</h2>
+      <p class="section-sub">Powered by ArenaCore — Case Study: VERSUS (gameplay angles + on-screen capability notes).</p>
+
+      <div class="videos">
+        <div class="video">
+          <!-- QC PATCH v1.1: self-hosted HTML5 video -->
+          <video preload="metadata" controls playsinline poster="assets/img/concept-01.jpg">
+            <source src="assets/videos/versus-angle-1.mp4" type="video/mp4">
+          </video>
+          <div class="cap">
+            <div>
+              <div style="font-weight:650;">VERSUS Gameplay Angle 1</div>
+              <small>Self-hosted placeholder (replace with official VERSUS MP4).</small>
+            </div>
+            <span class="tag"><img src="assets/img/versus-game-logo.png" alt="VERSUS logo" style="width:22px;height:22px;border-radius:6px;"> Case Study</span>
+          </div>
+        </div>
+
+        <div class="video">
+          <video preload="metadata" controls playsinline poster="assets/img/concept-02.jpg">
+            <source src="assets/videos/versus-angle-2.mp4" type="video/mp4">
+          </video>
+          <div class="cap">
+            <div>
+              <div style="font-weight:650;">VERSUS Gameplay Angle 2</div>
+              <small>Overlay notes: netcode, tick rate, performance counters.</small>
+            </div>
+            <span class="tag">FPS / Arena</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- QC PATCH v1.1: Photo gallery (inside existing demos section) -->
+      <div class="section tight">
+        <div class="card">
+          <h3 class="section-title gallery-section-title"><img class="ac-emoji" src="assets/emoji/Emoji_25_Media_Gallery.png" alt="" aria-hidden="true"> Showcase Gallery (official style packs)</h3>
+          <p class="section-sub gallery-section-sub">Curated arena style packs with grouped previews, fast browsing, and category-based lightbox viewing.</p>
+          <p style="margin:0 0 12px;color:color-mix(in oklab, var(--text) 84%, var(--muted));">Click any image to open fullscreen. Categories are from the provided Galleries pack.</p>
+
+          <div class="gallery">
+            <div class="gallery-group" data-g="g1">
+              <div class="gallery-head"><div><h4>Classic Warzone</h4><p class="sg-sub">Grounded combat readability for tactical FPS buyers.</p></div><p class="gallery-copy">Best for teams selling realistic combat tone, cleaner silhouettes, and mature military-style presentation.</p></div>
+              <div class="gallery-grid" data-gallery="g1"></div>
+            </div>
+            <div class="gallery-group" data-g="g2">
+              <div class="gallery-head"><div><h4>Fortnite Chaotic</h4><p class="sg-sub">Bright, energetic, youth-friendly visual direction.</p></div><p class="gallery-copy">Useful for licensors targeting creator economies, casual retention loops, and high-visibility readability.</p></div>
+              <div class="gallery-grid" data-gallery="g2"></div>
+            </div>
+            <div class="gallery-group" data-g="g3">
+              <div class="gallery-head"><div><h4>Real Military</h4><p class="sg-sub">Authentic gear language with disciplined visual framing.</p></div><p class="gallery-copy">Made for publishers who need a sober, premium FPS mood for pitching, sales decks, and market positioning.</p></div>
+              <div class="gallery-grid" data-gallery="g3"></div>
+            </div>
+            <div class="gallery-group" data-g="g4">
+              <div class="gallery-head"><div><h4>Roblox / Minecraft</h4><p class="sg-sub">Stylized blocky readability with simplified shapes.</p></div><p class="gallery-copy">Strong fit for younger audiences, UGC-inspired experiences, and highly readable sandbox-style production.</p></div>
+              <div class="gallery-grid" data-gallery="g4"></div>
+            </div>
+            <div class="gallery-group" data-g="g5">
+              <div class="gallery-head"><div><h4>Sword &amp; Sorcery</h4><p class="sg-sub">Fantasy combat presentation with dramatic VFX mood.</p></div><p class="gallery-copy">Helps buyers evaluate how ArenaCore styling can stretch beyond pure military FPS into hero-driven combat themes.</p></div>
+              <div class="gallery-grid" data-gallery="g5"></div>
+            </div>
+            <div class="gallery-group" data-g="g6">
+              <div class="gallery-head"><div><h4>DOOM Horror</h4><p class="sg-sub">Aggressive atmosphere, contrast, and tension-heavy direction.</p></div><p class="gallery-copy">Good for horror FPS licensing conversations where impact, darkness, and heavier environmental intensity matter.</p></div>
+              <div class="gallery-grid" data-gallery="g6"></div>
+            </div>
+          </div>
+
+          <div class="gallery-quicknav" aria-label="Showcase categories">
+            <a class="gallery-preview-link" href="#gallery-classic" data-gallery-launch="g1"><img class="gallery-preview-thumb" src="assets/gallery/previews/classic-arena.jpg" alt="Classic Arena preview"><span>Classic Arena</span></a>
+            <a class="gallery-preview-link" href="#gallery-wacky" data-gallery-launch="g2"><img class="gallery-preview-thumb" src="assets/gallery/previews/wacky-arena.jpg" alt="Wacky Arena preview"><span>Wacky Arena</span></a>
+            <a class="gallery-preview-link" href="#gallery-military" data-gallery-launch="g3"><img class="gallery-preview-thumb" src="assets/gallery/previews/military-arena.jpg" alt="Military Arena preview"><span>Military Arena</span></a>
+            <a class="gallery-preview-link" href="#gallery-cubic" data-gallery-launch="g4"><img class="gallery-preview-thumb" src="assets/gallery/previews/cubic-arena.jpg" alt="Cubic Arena preview"><span>Cubic Arena</span></a>
+            <a class="gallery-preview-link" href="#gallery-swords-guns" data-gallery-launch="g5"><img class="gallery-preview-thumb" src="assets/gallery/previews/swords-guns-arena.jpg" alt="Swords &amp; Guns Arena preview"><span>Swords &amp; Guns Arena</span></a>
+            <a class="gallery-preview-link" href="#gallery-horror" data-gallery-launch="g6"><img class="gallery-preview-thumb" src="assets/gallery/previews/horror-arena.jpg" alt="Horror Arena preview"><span>Horror Arena</span></a>
+          </div>
+
+          <div class="small" style="margin-top:10px;">No external dependencies. Lightweight lightbox + masonry columns.</div>
+        </div>
+      </div>
+
+      <div class="section tight">
+        <div class="card">
+          <h3 style="margin:0 0 8px;">What the promo script highlights</h3>
+          <p style="margin:0;color:color-mix(in oklab, var(--text) 84%, var(--muted));">AI behavior graphs, level editor flows, weapon configuration tools, game mode setup, real-time multiplayer testing, and a production-grade path from editor → build → gameplay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" id="stats">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_01_Business-Data.png" alt="" aria-hidden="true"> Industry Statistics (license-ready framing)</h2>
+      <p class="section-sub">Kept framing; upgraded visuals using researched figures + animated charts.</p>
+
+      <div class="stats">
+        <div class="statline">
+          <div class="bigstat">
+            <div class="num" data-count="200" data-suffix="%">0%</div>
+            <p class="lbl">Projected ROI (internal deck assumption): up to 200% within 3 years.</p>
+            <div class="small">Assumes earlier launch capture, lower rebuild overhead, and faster live-ops monetization over a 36-month planning window.</div>
+          </div>
+          <div class="bigstat">
+            <div class="num" data-prefix="$" data-count="155000">0</div>
+            <p class="lbl">Annual licensing range referenced internally: ~$35k–$155k (tier-based).</p>
+            <div class="small">Upper-tier pricing typically reflects wider deployment rights, deeper onboarding, stronger support scope, and live-ops readiness.</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Market leverage (regional)</h3>
+          <p style="margin:0 0 10px;color:color-mix(in oklab, var(--text) 84%, var(--muted));">Middle East data point: shooter & battle-royale titles held 34.60% share in 2025 (Middle East gaming market report).</p>
+
+          <div class="bars" aria-label="Animated bars">
+            <div>
+              <div class="barrow"><span>FPS live-ops complexity</span><span>High</span></div>
+              <div class="bar"><span data-w="88"></span></div>
+            </div>
+            <div>
+              <div class="barrow"><span>Time-to-market pressure</span><span>Very high</span></div>
+              <div class="bar"><span data-w="92"></span></div>
+            </div>
+            <div>
+              <div class="barrow"><span>Engine differentiation value</span><span>High</span></div>
+              <div class="bar"><span data-w="80"></span></div>
+            </div>
+          </div>
+
+          <div class="charts" style="margin-top:14px;">
+            <div class="card chart-card">
+              <div class="chart-title"><b>Battle Royale Market</b><span class="small">$10.13B (2024) → $22.42B (2032)</span></div>
+              <canvas id="chartBR" class="chart" aria-label="Battle Royale market chart"></canvas>
+            </div>
+            <div class="card chart-card">
+              <div class="chart-title"><b>MEA Gaming Market</b><span class="small">2024 revenue + 8.5% CAGR</span></div>
+              <canvas id="chartMEA" class="chart" aria-label="MEA gaming chart"></canvas>
+            </div>
+          </div>
+
+          <div class="small" style="margin-top:10px;">Charts are for sales framing. Replace with your licensed datasets anytime.</div>
+          <div class="analytics-grid">
+            <div class="analytic-card"><strong>Licensing Signal</strong><span>Studios evaluating engine licensing care most about delivery compression, backend risk reduction, and live-ops readiness.</span></div>
+            <div class="analytic-card"><strong>Commercial Framing</strong><span>ArenaCore sells best when positioned as a faster launch path with measurable support, telemetry, and scaling value.</span></div>
+            <div class="analytic-card"><strong>Buyer Readiness</strong><span>Indies compare affordability, AA teams compare shipping speed, and publishers compare support scope plus operational clarity.</span></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="specs">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_15_HUD_Metrics.png" alt="" aria-hidden="true"> ArenaCore Benchmark Portal</h2>
+      <p class="section-sub">A clearer evaluation portal for technical and commercial buyers.</p>
+
+      <div class="card" style="padding:16px;">
+        <div class="bench-hero">
+          <div>
+            <h3 style="margin:0 0 8px;">Decision Portal for Buyers, Publishers, and Indie FPS Teams</h3>
+            <p style="margin:0;color:color-mix(in oklab, var(--text) 82%, var(--muted));">Use this section to compare business fit, production fit, and commercialization fit before you request a formal quote.</p>
+          </div>
+          <div class="bench-badges"><span class="tag">🎯 Buyer fit</span><span class="tag">📈 Monetization fit</span><span class="tag">🧩 Production fit</span></div>
+        </div>
+        <div class="bench-grid decision-grid">
+          <div class="decision-card"><h4>Indie Studios</h4><p>Best when you need a pre-structured FPS foundation, sharper delivery discipline, and less reinvention before early launch.</p><ul><li>Lower systems risk</li><li>Shorter pre-production loops</li><li>Clearer commercial packaging</li></ul></div>
+          <div class="decision-card"><h4>AA / Publishers</h4><p>Ideal when you need licensing leverage, benchmark clarity, and premium support framing for multiple stakeholders.</p><ul><li>Support + SLA options</li><li>Telemetry-ready roadmap</li><li>Scalable quote structure</li></ul></div>
+          <div class="decision-card"><h4>Business Decision Makers</h4><p>Useful for budget owners who need a commercial view of timeline compression, operational readiness, and quote modularity.</p><ul><li>Faster decision funnel</li><li>Cleaner scope breakdown</li><li>Reusable pricing architecture</li></ul></div>
+        </div>
+        <div class="bench-tabs" aria-label="Benchmark toggle">
+          <button class="bench-tab active" type="button" data-bench="arenacore">ArenaCore Fit</button>
+          <button class="bench-tab" type="button" data-bench="neutral">Neutral Comparison</button>
+        </div>
+        <div class="bench-grid" id="benchGrid"></div>
+        <div class="pills" style="margin-top:12px;"><a class="btn" href="#contact">Request Benchmark Report</a><a class="btn primary" href="quote-builder/" data-quote-open="1">Build Quote</a></div>
+        <div class="small" style="margin-top:8px;">This portal is designed to help non-technical buyers and technical evaluators reach a faster go / no-go decision.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title"><img class="ac-emoji" src="assets/emoji/Emoji_23_Support.png" alt="" aria-hidden="true"> Contact Sales</h2>
+      <p class="section-sub">CRM-ready form with validation + human-check. You can connect it to your backend endpoint any time.</p>
+
+      <div class="card">
+        <form id="contactForm" class="form" novalidate>
+          <input id="company_website" name="company_website" class="input" type="text" autocomplete="off" style="display:none" tabindex="-1" aria-hidden="true">
+
+          <div class="row">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input id="name" name="name" class="input" data-required="1" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="email">Work email *</label>
+              <input id="email" name="email" class="input" data-required="1" placeholder="name@company.com">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="company">Company / Studio *</label>
+              <input id="company" name="company" class="input" data-required="1" placeholder="Studio name">
+            </div>
+            <div class="field">
+              <label for="role">Role</label>
+              <input id="role" name="role" class="input" placeholder="CTO / Producer / Founder">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="country">Country</label>
+              <input id="country" name="country" class="input" placeholder="KSA / UAE / Jordan / ...">
+            </div>
+            <div class="field">
+              <label for="tier">Interested tier</label>
+              <select id="tier" name="tier" class="input">
+                <option>Studio (≈ $35k/year)</option>
+                <option>Pro (≈ $75k/year)</option>
+                <option>Enterprise (≈ $155k/year)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="ccu">Target CCU</label>
+              <input id="ccu" name="ccu" class="input" placeholder="5000">
+            </div>
+            <div class="field">
+              <label for="platforms">Platforms</label>
+              <input id="platforms" name="platforms" class="input" placeholder="PC / Console / Mobile">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="timeline">Timeline</label>
+            <input id="timeline" name="timeline" class="input" placeholder="6–18 months">
+          </div>
+
+          <div class="field">
+            <label for="message">Project details *</label>
+            <textarea id="message" name="message" class="input" data-required="1" placeholder="Game type, modes, netcode expectations, tick rate, target FPS, regions, and any must-have features."></textarea>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Human check: <span id="humanCheck"></span> *</label>
+              <input id="humanAnswer" class="input" placeholder="Answer">
+            </div>
+            <div class="field">
+              <label>CAPTCHA-ready</label>
+              <div class="input" style="display:flex;align-items:center;gap:10px;min-height:46px;">
+                <span class="tag">Ready for reCAPTCHA/hCaptcha</span>
+                <span class="small">Add keys when deploying.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pills">
+            <button class="btn primary" type="submit">Send</button>
+            <a class="btn" href="quote-builder/" data-quote-open="1">Build Quote First</a>
+          </div>
+
+          <div id="contactMsg" aria-live="polite"></div>
+          <p class="small" style="margin:6px 0 0;">Email target is set to <strong>sales@arenacore.com</strong> (change as needed).</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid footer-rich">
+      <div>
+        <div class="footer-brand"><img src="assets/img/arenacore-logo.png" alt="ArenaCore logo"><span>ArenaCore</span></div>
+        <p style="margin:0 0 10px;">Premium FPS engine licensing, commercialization support, quote configuration, ROI framing, and production-ready tooling for studios and publishers.</p>
+        <p class="small" style="margin:0;">All prices and outputs are estimates. Formal quotes are issued after technical review.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <div class="footer-links"><a href="#features">Features</a><a href="#roi">ROI Calculator</a><a href="quote-builder/">Quote Builder</a><a href="#contact">Contact Sales</a></div>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <div class="footer-links"><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="404.html">404 Page</a></div>
+      </div>
+      <div>
+        <h4>Commercial</h4>
+        <div class="footer-links"><a href="mailto:sales@arenacore.com">sales@arenacore.com</a><a href="#specs">Benchmark Portal</a><a href="#demos">Showcase Gallery</a></div>
+        <div class="small" style="margin-top:10px;">© 2026 ArenaCore. All Rights Reserved.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- QC PATCH v1.1: Huge Quote Modal -->
+<div id="quoteModal" class="quote-modal" aria-hidden="true">
+  <div class="qm-inner" role="dialog" aria-modal="true" aria-label="Build Your Quote">
+    <div class="qm-top">
+      <div class="qm-title"><img class="ac-emoji sm" src="assets/emoji/Emoji_03_Price_Quotation.png" alt="" aria-hidden="true"> Build Your Quote</div>
+      <button class="qm-close" type="button" data-quote-close="1" aria-label="Close">×</button>
+    </div>
+    <div class="qm-body"><div class="qb-inline"><div id="quoteBuilder" class="qb">
+        <div>
+          <div class="stepper no-print" aria-label="Steps">
+            <div class="step active"><span class="n">1</span> Tier</div>
+            <div class="step"><span class="n">2</span> FPS Requirements</div>
+            <div class="step"><span class="n">3</span> Add-ons</div>
+            <div class="step"><span class="n">4</span> Client</div>
+          </div>
+
+          <div class="card step-panel">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">1) Choose a tier</h2>
+            <div class="tiers" role="list">
+              <div class="tier" role="listitem" data-tier="studio">
+                <h3>Studio</h3>
+                <div class="price">$35,000 <span class="small">/ year</span></div>
+                <ul>
+                  <li>PC-first licensing</li>
+                  <li>Core FPS toolchain</li>
+                  <li>Standard support</li>
+                </ul>
+              </div>
+              <div class="tier" role="listitem" data-tier="pro">
+                <h3>Pro</h3>
+                <div class="price">$75,000 <span class="small">/ year</span></div>
+                <ul>
+                  <li>Advanced competitive systems</li>
+                  <li>Expanded multiplayer tooling</li>
+                  <li>Faster support response</li>
+                </ul>
+              </div>
+              <div class="tier" role="listitem" data-tier="enterprise">
+                <h3>Enterprise</h3>
+                <div class="price">$155,000 <span class="small">/ year</span></div>
+                <ul>
+                  <li>Custom engine tailoring</li>
+                  <li>SLA + security add-ons</li>
+                  <li>Enterprise onboarding</li>
+                </ul>
+              </div>
+            </div>
+            <div class="small">Prices are tier references (internal deck). Final quote depends on scope, CCU, platforms, and add-ons.</div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">2) FPS requirements</h2>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCCU">Target CCU</label>
+                <input id="qbCCU" class="input" type="number" min="0" value="5000">
+                <div class="help">Peak concurrent users (per region).</div>
+              </div>
+              <div class="field">
+                <label for="qbRegions">Regions</label>
+                <select id="qbRegions" class="input">
+                  <option value="MENA">MENA</option>
+                  <option value="EU">EU</option>
+                  <option value="NA">NA</option>
+                  <option value="Global">Global</option>
+                </select>
+                <div class="help">Affects deployment assumptions.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCurrency">Currency</label>
+                <select id="qbCurrency" class="input">
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JOD">JOD</option>
+                  <option value="SAR">SAR</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qbPackage">Package</label>
+                <select id="qbPackage" class="input">
+                  <option value="starter">Starter</option>
+                  <option value="growth">Growth</option>
+                  <option value="scale">Scale</option>
+                  <option value="enterprise">Enterprise</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbTimeline">Delivery timeline (months)</label>
+                <input id="qbTimeline" class="input" type="number" min="1" value="6">
+              </div>
+              <div class="field">
+                <label for="qbFPS">Target FPS</label>
+                <input id="qbFPS" class="input" type="number" min="30" value="120">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbTick">Tick rate (Hz)</label>
+                <input id="qbTick" class="input" type="number" min="20" value="60">
+              </div>
+              <div class="field">
+                <label for="qbAuthority">Network authority model</label>
+                <select id="qbAuthority" class="input">
+                  <option value="Authoritative">Authoritative</option>
+                  <option value="Hybrid">Hybrid</option>
+                  <option value="Client">Client-Heavy</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbHosting">Hosting Plan</label>
+                <select id="qbHosting" class="input">
+                  <option value="self">Self-managed</option>
+                  <option value="managed">Managed Cloud</option>
+                  <option value="dedicated">Dedicated Regional Stack</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qbComponents">Core Components</label>
+                <select id="qbComponents" class="input">
+                  <option value="engine">Engine + Tools</option>
+                  <option value="engine_backend">Engine + Backend</option>
+                  <option value="fullstack">Full Stack Package</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="card" style="padding:14px;">
+              <h3 style="margin:0 0 8px;font-size:16px;">Platforms</h3>
+              <div class="pills">
+                <label class="pill"><input class="chk-platform" type="checkbox" value="PC" checked> PC</label>
+                <label class="pill"><input class="chk-platform" type="checkbox" value="Console"> Console</label>
+                <label class="pill"><input class="chk-platform" type="checkbox" value="Mobile"> Mobile</label>
+              </div>
+            </div>
+
+            <div class="small" style="margin-top:10px;">Tip: add console/mobile only if you truly need it — it impacts cost and support scope.</div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">3) Add-ons</h2>
+            <p class="section-sub" style="margin:0 0 14px;">Pick only what increases your probability of shipping faster and operating safer.</p>
+
+            <div class="grid-3" style="grid-template-columns:1fr 1fr;">
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Dedicated Matchmaking</h3>
+                    <p style="margin:0;">Queue logic, skill bins, and competitive match flow patterns.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Dedicated Matchmaking">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Anti-Cheat Toolkit</h3>
+                    <p style="margin:0;">Hardening hooks, server checks, and telemetry flags.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Anti-Cheat Toolkit">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">LiveOps Analytics</h3>
+                    <p style="margin:0;">Dashboards, KPIs, events, and stability metrics.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="LiveOps Analytics">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Custom Rendering Pipeline</h3>
+                    <p style="margin:0;">Optimization & tailoring for your target art style.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Custom Rendering Pipeline">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">White-Label Admin Portal</h3>
+                    <p style="margin:0;">Tournament/admin tools branded for your org.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="White-Label Admin Portal">
+                </div>
+              </label>
+
+              <label class="card" style="padding:14px;cursor:pointer;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Priority Support SLA</h3>
+                    <p style="margin:0;">Priority response windows + escalation path.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Priority Support SLA">
+                </div>
+              </label>
+
+              <!-- QC PATCH v1.1: VERSUS-specific add-ons (hidden unless product=VERSUS) -->
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Royalty Model &amp; Publishing Rights</h3>
+                    <p style="margin:0;">License structure, publishing terms, regional rights, and royalty options.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Royalty Model &amp; Publishing Rights">
+                </div>
+              </label>
+
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Web3 NFT Layer</h3>
+                    <p style="margin:0;">Optional NFT utility layer (cosmetics/collectibles) with marketplace hooks.</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Web3 NFT Layer">
+                </div>
+              </label>
+
+              <label class="card" data-versus="1" style="padding:14px;cursor:pointer;display:none;">
+                <div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;">
+                  <div>
+                    <h3 style="margin:0 0 6px;">Battle Royale Content Pack</h3>
+                    <p style="margin:0;">BR-focused content pack + event cadence templates (case study aligned).</p>
+                  </div>
+                  <input class="chk-addon" type="checkbox" value="Battle Royale Content Pack">
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">3B) Core Modules</h2>
+            <p class="section-sub" style="margin:0 0 14px;">Choose the modules that match the product you are licensing.</p>
+            <div class="grid-3 modules-grid" style="grid-template-columns:1fr 1fr;">
+              <label class="card" style="padding:14px;cursor:pointer;"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;"><div><h3 style="margin:0 0 6px;">Matchmaking & Progression</h3><p style="margin:0;">Player lifecycle, MMR, ranks, and queue orchestration.</p></div><input class="chk-module" type="checkbox" value="matchmaking"></div></label>
+              <label class="card" style="padding:14px;cursor:pointer;"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;"><div><h3 style="margin:0 0 6px;">Telemetry & Analytics</h3><p style="margin:0;">Live KPIs, event streams, retention insights, business dashboards.</p></div><input class="chk-module" type="checkbox" value="telemetry"></div></label>
+              <label class="card" style="padding:14px;cursor:pointer;"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;"><div><h3 style="margin:0 0 6px;">Security & Anti-Cheat</h3><p style="margin:0;">Authority checks, abuse signals, and session protection.</p></div><input class="chk-module" type="checkbox" value="security"></div></label>
+              <label class="card" style="padding:14px;cursor:pointer;"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start;"><div><h3 style="margin:0 0 6px;">LiveOps & Commerce</h3><p style="margin:0;">Events, monetization hooks, offers, and operational tooling.</p></div><input class="chk-module" type="checkbox" value="liveops"></div></label>
+            </div>
+          </div>
+
+          <div class="card step-panel" style="display:none;">
+            <h2 class="section-title" style="font-size:20px;margin:0 0 10px;">4) Client details</h2>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbName">Full name</label>
+                <input id="qbName" class="input" placeholder="Your name">
+              </div>
+              <div class="field">
+                <label for="qbEmailIn">Work email *</label>
+                <input id="qbEmailIn" class="input" placeholder="name@company.com">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="qbCompany">Company / Studio</label>
+                <input id="qbCompany" class="input" placeholder="Studio name">
+              </div>
+              <div class="field">
+                <label>Share link</label>
+                <input id="qbShareLink" class="input" readonly value="">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="qbNotes">Notes</label>
+              <textarea id="qbNotes" class="input" placeholder="Anything important: netcode constraints, platforms, security requirements, timeline risks…"></textarea>
+            </div>
+
+            <div class="pills no-print">
+              <button id="qbCopyLink" class="btn" type="button">Copy Share Link</button>
+              <a id="qbEmail" class="btn primary" href="#">Email Quote</a>
+              <button id="qbPDF" class="btn" type="button">Export PDF</button>
+            </div>
+
+            <div class="small" style="margin-top:10px;">PDF export uses your browser’s “Print → Save as PDF”.</div>
+          </div>
+
+          <div class="pills no-print" style="margin-top: 12px;">
+            <button id="qbPrev" class="btn" type="button" disabled>Back</button>
+            <button id="qbNext" class="btn primary" type="button">Next</button>
+            <button id="qbSubmit" class="btn primary" type="button" style="display:none;">Finish</button>
+            <a class="btn" href="#roi">ROI Calculator</a>
+          </div>
+        </div>
+
+        <aside class="summary" aria-label="Quote summary">
+          <h3>Live Summary</h3>
+          <p class="muted" style="margin:0 0 10px;">Real-time pricing reflects tier + scale + add-ons.</p>
+
+          <div class="line"><span>Tier</span><strong id="sumTier">Studio</strong></div>
+          <div class="line"><span>Platforms</span><strong id="sumPlatforms">PC</strong></div>
+          <div class="line"><span>Target CCU</span><strong id="sumCCU">5,000</strong></div>
+          <div class="line"><span>Timeline</span><strong id="sumTimeline">6 mo</strong></div>
+          <div class="line"><span>Target FPS</span><strong id="sumFPS">120 FPS</strong></div>
+          <div class="line"><span>Tick</span><strong id="sumTick">60 Hz</strong></div>
+          <div class="line"><span>Authority</span><strong id="sumAuthority">Authoritative</strong></div>
+          <div class="line"><span>Currency</span><strong id="sumCurrency">USD</strong></div>
+          <div class="line"><span>Package</span><strong id="sumPackage">Starter</strong></div>
+          <div class="line"><span>Hosting</span><strong id="sumHosting">Self-managed</strong></div>
+          <div class="line"><span>Components</span><strong id="sumComponents">Engine + Tools</strong></div>
+          <div class="line"><span>Modules</span><strong id="sumModules">—</strong></div>
+
+          <div style="height:10px;"></div>
+
+          <div class="line"><span>Base</span><strong id="sumBase">$35,000</strong></div>
+          <div class="line"><span>Scale</span><strong id="sumScale">$0</strong></div>
+          <div class="line"><span>Add-ons</span><strong id="sumAddons">$0</strong></div>
+          <div class="line"><span>Total</span><strong id="sumTotal" class="total">$35,000</strong></div>
+
+          <div class="small" style="margin-top:10px;">
+            Need a formal procurement-ready quote? Use Email Quote — sales can confirm scope, CCU, platforms, and SLA.
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</div></div>
+  </div>
+</div>
+
+<!-- QC PATCH v1.1: Lightbox (Gallery) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lb-close" type="button" aria-label="Close" data-lb-close="1">×</button>
+  <div class="lb-inner"><img id="lbImg" alt="" /></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
