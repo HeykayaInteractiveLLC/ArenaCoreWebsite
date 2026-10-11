@@ -1,0 +1,47 @@
+{
+  "name": "Legal Free & Open Source — Official Linux Releases v2",
+  "downloads": [
+    {
+      "title": "Mindustry",
+      "uris": ["https://github.com/Anuken/Mindustry/releases/download/v160.7/Mindustry.jar"],
+      "uploadDate": "2026-10-08T00:20:39Z",
+      "fileSize": "84.6 MiB"
+    },
+    {
+      "title": "Endless Sky",
+      "uris": ["https://github.com/endless-sky/endless-sky/releases/download/v0.11.2/Endless_Sky-v0.11.2-x86_64.AppImage"],
+      "uploadDate": "2026-06-27T20:37:33Z",
+      "fileSize": "346.3 MiB"
+    },
+    {
+      "title": "The Powder Toy",
+      "uris": ["https://github.com/The-Powder-Toy/The-Powder-Toy/releases/download/v100.1.400/powder-v100.1.400%2Bsteam-x86_64-linux-gnu"],
+      "uploadDate": "2026-08-08T03:15:47Z",
+      "fileSize": "7.3 MiB"
+    },
+    {
+      "title": "SuperTux",
+      "uris": ["https://github.com/SuperTux/supertux/releases/download/v0.7.0/SuperTux-v0.7.0.glibc2.38-x86_64.AppImage"],
+      "uploadDate": "2026-03-15T06:04:25Z",
+      "fileSize": "286.0 MiB"
+    },
+    {
+      "title": "OpenRA",
+      "uris": ["https://github.com/OpenRA/OpenRA/releases/download/release-20250330/OpenRA-Red-Alert-x86_64.AppImage"],
+      "uploadDate": "2025-03-30T17:36:43Z",
+      "fileSize": "42.0 MiB"
+    },
+    {
+      "title": "Warzone 2100",
+      "uris": ["https://github.com/Warzone2100/warzone2100/releases/download/4.7.0/warzone2100_ubuntu24.04_amd64.deb"],
+      "uploadDate": "2026-04-07T15:47:54Z",
+      "fileSize": "374.9 MiB"
+    },
+    {
+      "title": "SuperTuxKart",
+      "uris": ["https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-linux-x86_64.tar.gz"],
+      "uploadDate": "2025-10-20T16:48:01Z",
+      "fileSize": "701.2 MiB"
+    }
+  ]
+}
