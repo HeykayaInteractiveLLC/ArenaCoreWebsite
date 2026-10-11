@@ -40,6 +40,22 @@
       ],
       "uploadDate": "2025-03-30T17:36:43Z",
       "fileSize": "42.0 MiB"
+    },
+    {
+      "title": "Warzone 2100",
+      "uris": [
+        "https://github.com/Warzone2100/warzone2100/releases/download/4.7.0/warzone2100_ubuntu24.04_amd64.deb"
+      ],
+      "uploadDate": "2026-04-07T15:47:54Z",
+      "fileSize": "374.9 MiB"
+    },
+    {
+      "title": "SuperTuxKart",
+      "uris": [
+        "https://github.com/supertuxkart/stk-code/releases/download/1.5/SuperTuxKart-1.5-linux-x86_64.tar.gz"
+      ],
+      "uploadDate": "2025-10-20T16:48:01Z",
+      "fileSize": "701.2 MiB"
     }
   ]
 }
